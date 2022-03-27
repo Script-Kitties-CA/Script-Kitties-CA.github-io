@@ -57,7 +57,8 @@ const Members = () => {
           image={data.cat}
         />
         <Member
-          name="alexxxii"
+          name="Alexandra Tenney"
+          alias="alexxxii"
           image={data.cat_2}
         />
       </div>

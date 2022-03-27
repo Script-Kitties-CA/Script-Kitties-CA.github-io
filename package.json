@@ -15,6 +15,9 @@
     "clean": "gatsby clean",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
+  "engines": {
+    "node": "16"
+  },
   "dependencies": {
     "autoprefixer": "^10.4.4",
     "gatsby": "^4.10.1",
@@ -35,5 +38,9 @@
   },
   "devDependencies": {
     "prettier": "2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JamesLowther/scriptkitties.ca"
   }
 }
