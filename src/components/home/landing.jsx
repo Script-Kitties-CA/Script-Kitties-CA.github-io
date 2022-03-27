@@ -13,7 +13,7 @@ const Landing = () => {
       <div className="w-11/12 md:w-8/12 lg:w-2/3 xl:w-1/3">
         <div className="w-9/12 mx-auto">
           <StaticImage
-            className="select-none"
+            className="select-none shadow-lg rounded-full"
             src="../../images/logo-white.png"
             alt="Script Kitties logo"
             placeholder="none"

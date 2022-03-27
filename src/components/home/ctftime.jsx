@@ -15,7 +15,7 @@ const CTFtime = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <div className="px-8 py-2 rounded-md shadow bg-violet-300 hover:bg-violet-400 transition duration-75 ease-out transform hover:scale-103">
+        <div className="px-8 py-2 rounded-md shadow-lg bg-violet-300 hover:bg-violet-400 transition duration-75 ease-out transform hover:scale-103">
           CTFtime
         </div>
       </a>
