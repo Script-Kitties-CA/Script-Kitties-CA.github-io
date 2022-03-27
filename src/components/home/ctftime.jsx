@@ -2,12 +2,12 @@ import * as React from "react";
 
 const CTFtime = () => {
   return (
-    <div 
+    <div
       className="text-center mt-10 mb-28 w-64 mx-auto"
       data-sal="fade"
       data-sal-duration="1000"
       data-sal-delay="100"
-      data-sal-easing="ease"  
+      data-sal-easing="ease"
     >
       <a
         className="text-4xl text-white"
