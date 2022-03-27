@@ -31,7 +31,7 @@ const Members = () => {
 
   return (
     <>
-      <div className="flex flex-wrap justify-evenly w-full mb-20">
+      <div className="flex flex-wrap justify-evenly w-full mb-8">
         <Member name="James Lowther" alias="Articuler" image={data.cat_3} />
         <Member name="Analytical Engine" image={data.cat} />
         <Member name="Alexandra Tenney" alias="alexxxii" image={data.cat_2} />
