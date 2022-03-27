@@ -6,7 +6,7 @@ import Quote from "./quote";
 
 const About = () => {
   return (
-    <div className="flex justify-center w-full mt-32">
+    <div className="flex justify-center w-full mt-8">
       <div className="w-3/4">
         <CTFtime />
         <Members />
