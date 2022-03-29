@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 const Member = (props) => {
   return (
     <div
-      className="flex flex-col items-center text-center w-48 sm:w-64 my-6 mx-16"
+      className="flex flex-col items-center text-center w-48 sm:w-64 my-6 mx-16 text-stone-900 dark:text-stone-100"
       data-sal="slide-up"
       data-sal-duration="1000"
       data-sal-delay="500"

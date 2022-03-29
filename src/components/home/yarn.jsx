@@ -3,10 +3,7 @@ import DrawSVG from "../svgdraw";
 
 const Yarn = () => {
   return (
-    <div         
-      data-sal="fade"
-      className="w-full"
-    >
+    <div data-sal="fade" className="w-full">
       <DrawSVG
         width="100%"
         easing="easeInOutCubic"

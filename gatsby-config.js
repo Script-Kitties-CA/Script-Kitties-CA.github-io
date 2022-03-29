@@ -10,8 +10,8 @@ module.exports = {
         name: `Script Kitties`,
         short_name: `Script Kittise`,
         start_url: `/`,
-        background_color: `#f0f0f0`,
-        theme_color: `#f5dbff`,
+        background_color: `#f5f5f4`,
+        theme_color: `#f5d0fe`,
         display: `standalone`,
         icon: `src/images/icon.png`,
       },
@@ -36,5 +36,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-scroll-reveal`,
+    `gatsby-plugin-dark-mode`,
   ],
 };
