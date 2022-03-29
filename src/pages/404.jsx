@@ -3,7 +3,6 @@ import * as React from "react";
 import SiteMetadata from "../components/seo";
 import Layout from "../components/layout";
 
-
 const NotFoundPage = () => {
   return (
     <Layout>

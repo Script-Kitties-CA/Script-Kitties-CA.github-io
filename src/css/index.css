@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body.light #logo-dark {
+    display: none;
+}
+
+body.dark #logo-light {
+    display: none;
+}
