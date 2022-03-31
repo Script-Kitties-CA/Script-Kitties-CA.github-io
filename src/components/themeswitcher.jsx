@@ -11,7 +11,7 @@ class ThemeSwitcher extends React.Component {
               onClick={() => {
                 toggleTheme(theme === "light" ? "dark" : "light");
               }}
-              className="mr-4 mt-4 w-10 h-10 cursor-pointer fill-violet-200 hover:fill-violet-300 dark:fill-violet-300 dark:hover:fill-violet-200"
+              className="mr-4 mt-4 w-10 h-10 cursor-pointer fill-violet-200 hover:fill-violet-300 dark:fill-violet-300 dark:hover:fill-violet-200 hover:scale-103"
               viewBox="0 0 1280.000000 1280.000000"
               preserveAspectRatio="xMidYMid meet"
             >

@@ -18,6 +18,7 @@ const Landing = () => {
               src="../../images/logo-white.png"
               alt="Script Kitties logo"
               placeholder="none"
+              loading="eager"
             />
           </div>
           <div id="logo-dark">
@@ -26,6 +27,7 @@ const Landing = () => {
               src="../../images/logo-dark.png"
               alt="Script Kitties logo"
               placeholder="none"
+              loading="eager"
             />
           </div>
         </div>
