@@ -26,6 +26,11 @@ const Members = () => {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
+      cat_4: file(relativePath: { eq: "members/cat_4.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 500, layout: CONSTRAINED)
+        }
+      }
     }
   `);
 
@@ -35,6 +40,8 @@ const Members = () => {
         <Member name="James Lowther" alias="Articuler" url="https://jameslowther.com/" image={data.cat_3} />
         <Member name="Emily Baird" alias="Analytical Engine" url="https://ebaird.ca/" image={data.cat} />
         <Member name="Alexandra Tenney" alias="alexxxii" image={data.cat_2} />
+        <Member name="Braydon Willms" alias="st8" image={data.cat_4} />
+
       </div>
     </>
   );
