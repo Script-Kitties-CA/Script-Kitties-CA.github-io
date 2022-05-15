@@ -10,7 +10,7 @@ const Quote = () => {
         data-sal-delay="900"
         data-sal-easing="ease"
       >
-        "CTFs are pawsitively delightful!" - Jorge C. Meowington
+        "Being bad at CTFs is a good reason to do CTFs"
       </p>
     </>
   );
