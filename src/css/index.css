@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body.light #logo-dark {
+body.light .dark-mode {
     display: none;
 }
 
-body.dark #logo-light {
+body.dark .light-mode {
     display: none;
 }

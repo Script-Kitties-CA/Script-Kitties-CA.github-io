@@ -6,32 +6,42 @@ import Member from "./member";
 const Members = () => {
   const data = useStaticQuery(graphql`
     {
-      james_lowther: file(relativePath: { eq: "members/james-lowther.jpg" }) {
+      emily: file(relativePath: { eq: "members/emily.png" }) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
-      cat: file(relativePath: { eq: "members/cat.png" }) {
+      emilyDark: file(relativePath: { eq: "members/emily-dark.png" }) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
-      cat_2: file(relativePath: { eq: "members/cat_2.png" }) {
+      alex: file(relativePath: { eq: "members/alex.png" }) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
-      cat_3: file(relativePath: { eq: "members/cat_3.png" }) {
+      alexDark: file(relativePath: { eq: "members/alex-dark.png" }) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
-      cat_4: file(relativePath: { eq: "members/cat_4.png" }) {
+      james: file(relativePath: { eq: "members/james.png" }) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
-      cat_5: file(relativePath: { eq: "members/cat_5.png" }) {
+      jamesDark: file(relativePath: { eq: "members/james-dark.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 500, layout: CONSTRAINED)
+        }
+      }
+      jeremy: file(relativePath: { eq: "members/jeremy.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 500, layout: CONSTRAINED)
+        }
+      }
+      jeremyDark: file(relativePath: { eq: "members/jeremy-dark.png" }) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
@@ -42,10 +52,10 @@ const Members = () => {
   return (
     <>
       <div className="flex flex-wrap justify-evenly w-full mb-8">
-        <Member name="James Lowther" alias="Articuler" url="https://jameslowther.com/" image={data.cat_3} />
-        <Member name="Emily Baird" alias="Analytical Engine" url="https://ebaird.ca/" image={data.cat} />
-        <Member name="Alexandra Tenney" alias="alexxxii" image={data.cat_2} />
-        <Member name="Jeremy Stuart" alias="Mr.Wizard" image={data.cat_5} />
+        <Member name="James Lowther" alias="Articuler" url="https://jameslowther.com/" image={data.james} imageDark={data.jamesDark} />
+        <Member name="Emily Baird" alias="Analytical Engine" url="https://ebaird.ca/" image={data.emily} imageDark={data.emilyDark} />
+        <Member name="Alexandra Tenney" alias="alexxxii" image={data.alex} imageDark={data.alexDark} />
+        <Member name="Jeremy Stuart" alias="Mr.Wizard" image={data.jeremy} imageDark={data.jeremyDark} />
       </div>
     </>
   );

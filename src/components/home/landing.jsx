@@ -12,7 +12,7 @@ const Landing = () => {
       </div>
       <div className="mt-16 w-11/12 md:w-8/12 lg:w-2/3 xl:w-1/3">
         <div className="w-9/12 mx-auto">
-          <div id="logo-light">
+          <div className="light-mode">
             <StaticImage
               className="h-full w-full select-none rounded-full shadow-lg"
               src="../../images/logo-white.png"
@@ -21,7 +21,7 @@ const Landing = () => {
               loading="eager"
             />
           </div>
-          <div id="logo-dark">
+          <div className="dark-mode">
             <StaticImage
               className="h-full w-full select-none rounded-full shadow-lg"
               src="../../images/logo-dark.png"
@@ -40,7 +40,7 @@ const Landing = () => {
         strokeWidth={1.8}
       >
         <path
-          className="dark:stroke-stone-300 stroke-stone-500"
+          className="dark:stroke-stone-300 stroke-neutral-500"
           strokeLinecap="round"
           strokeLinejoin="round"
           d="M19 9l-7 7-7-7"

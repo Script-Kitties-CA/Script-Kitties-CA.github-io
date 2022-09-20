@@ -11,12 +11,22 @@ const Member = (props) => {
       data-sal-delay="500"
       data-sal-easing="ease"
     >
-      <GatsbyImage
-        className="rounded-full w-48 h-48 sm:w-64 sm:h-64 mb-4 shadow-lg"
-        image={getImage(props.image)}
-        alt={props.name}
-        placeholder="blurred"
-      />
+      <div className="light-mode">
+        <GatsbyImage
+          className="rounded-full w-48 h-48 sm:w-64 sm:h-64 mb-4 shadow-lg outline outline-3 outline-gray-300"
+          image={getImage(props.image)}
+          alt={props.name}
+          placeholder="blurred"
+        />
+      </div>
+      <div className="dark-mode">
+        <GatsbyImage
+          className="rounded-full w-48 h-48 sm:w-64 sm:h-64 mb-4 shadow-lg outline outline-3 outline-neutral-100"
+          image={getImage(props.imageDark)}
+          alt={props.name}
+          placeholder="blurred"
+        />
+      </div>
       <p className="text-2xl">{props.name}</p>
       <p className="text-xl">{props.alias}</p>
       {props.url &&
