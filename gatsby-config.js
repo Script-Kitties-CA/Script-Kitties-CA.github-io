@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: `Script Kitties`,
-    siteUrl: `https://www.scriptkitties.ca`,
+    siteUrl: `https://www.scriptkitties.ca/`,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Script Kitties`,
-        short_name: `Script Kittise`,
+        short_name: `Script Kitties`,
         start_url: `/`,
         background_color: `#f5f5f4`,
         theme_color: `#f5d0fe`,
