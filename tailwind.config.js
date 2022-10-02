@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {
       scale: {
+        101: "1.01",
+        102: "1.02",
         103: "1.03",
       },
     },

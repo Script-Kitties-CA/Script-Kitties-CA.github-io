@@ -21,6 +21,7 @@
   "dependencies": {
     "animejs": "^3.2.1",
     "autoprefixer": "^10.4.12",
+    "axios": "^0.27.2",
     "gatsby": "^4.24.1",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-image": "^2.24.0",
