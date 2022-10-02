@@ -16,7 +16,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
   "engines": {
-    "node": "18"
+    "node": "16"
   },
   "dependencies": {
     "animejs": "^3.2.1",
