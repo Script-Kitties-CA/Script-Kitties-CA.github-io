@@ -14,7 +14,6 @@ class Events extends Component {
   async componentDidMount() {
     Axios.get("https://api.scriptkitties.ca/events")
       .then(result => {
-        console.log(result.data);
         this.setState({ events: result.data });
       })
       .catch(err => {
