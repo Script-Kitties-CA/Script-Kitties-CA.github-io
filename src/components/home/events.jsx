@@ -33,7 +33,7 @@ class Events extends Component {
         data-sal-delay="300"
         data-sal-easing="ease"
       >
-        {events.map(item => {
+        {events.slice(0, 3).map(item => {
           return (
             <Event
               name={ item.name }
