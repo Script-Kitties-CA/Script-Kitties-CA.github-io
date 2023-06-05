@@ -1,16 +1,16 @@
 # script-kitties-ca.github.io
 This repository contains the front-end code for the Script Kitties website.
 
-Hosted site can be found at https://www.scriptkitties.ca/.
+The hosted site can be found at https://www.scriptkitties.ca/.
 
 ## Development
 Configure your environment to use Node 18. If using `nvm`, run `nvm install` and `nvm use` to pull the correct version from the `.nvmrc` file.
 
-This site is built using the React-
+The site is built using [Gatsby](https://www.gatsbyjs.com/) with CSS written using the [TailwindCSS](https://tailwindcss.com/) framework.
 
 [Yarn](https://yarnpkg.com/) is the package manager for this project.
 
-Basic setup:
+### Basic setup
 ```sh
 # Configure node version.
 nvm install
@@ -51,6 +51,6 @@ yarn clean
 ```
 
 ## Deployment
-Deployment of this website is done using GitHub Actions to GitHub Pages. The pipeline is triggered when commits are merged to the `main` branch.
+Deployment of this website is done using GitHub Actions to GitHub Pages. The pipeline is triggered when commits are merged to the `main` branch of this repository.
 
-You can view any current workflows under the [Actions](https://github.com/Script-Kitties-CA/script-kitties-ca.github.io/actions) tab above.
+You can view any current workflows under the [Actions](https://github.com/Script-Kitties-CA/script-kitties-ca.github.io/actions) tab located above.
