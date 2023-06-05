@@ -51,19 +51,26 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+      - name: Detect nvm node version
+        id: detect-nvm-node-version
+        run: |
+          if [ -f "${{ github.workspace }}/.nvmrc" ]; then
+            NODE_VERSION=$(cat ${{ github.workspace }}/.nvmrc)
+          else
+            echo "Unable to determine nvm node version"
+            NODE_VERSION='18'
+          fi
+          echo "Setting node version to $NODE_VERSION"
+          echo "node_version=$NODE_VERSION" >> $GITHUB_OUTPUT
+          exit 0
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: ${{ steps.detect-nvm-node-version.outputs.node_version }}
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
-        with:
-          # Automatically inject pathPrefix in your Gatsby configuration file.
-          #
-          # You may remove this line if you want to manage the configuration yourself.
-          static_site_generator: gatsby
       - name: Restore cache
         uses: actions/cache@v3
         with:
@@ -76,8 +83,6 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Gatsby
-        env:
-          PREFIX_PATHS: 'true'
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
