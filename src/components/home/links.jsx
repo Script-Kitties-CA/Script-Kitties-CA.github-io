@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const CTFtime = () => {
+const Links = () => {
   return (
     <div
       className="text-center mt-10 mb-16 mx-auto"
@@ -17,7 +17,7 @@ const CTFtime = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="w-52 px-8 py-2 rounded-md shadow-lg bg-violet-300 dark:bg-violet-400 hover:bg-violet-400 dark:hover:bg-violet-500 transition duration-75 ease-out transform hover:scale-103">
+            <div className="text-center w-52 px-8 py-2 rounded-md shadow-lg bg-violet-300 dark:bg-violet-400 hover:bg-violet-400 dark:hover:bg-violet-500 transition duration-75 ease-out transform hover:scale-103">
               CTFtime
             </div>
           </a>
@@ -29,7 +29,7 @@ const CTFtime = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="w-52 px-8 py-2 rounded-md shadow-lg bg-violet-300 dark:bg-violet-400 hover:bg-violet-400 dark:hover:bg-violet-500 transition duration-75 ease-out transform hover:scale-103">
+            <div className="text-center w-52 px-8 py-2 rounded-md shadow-lg bg-violet-300 dark:bg-violet-400 hover:bg-violet-400 dark:hover:bg-violet-500 transition duration-75 ease-out transform hover:scale-103">
               GitHub
             </div>
           </a>
@@ -39,4 +39,4 @@ const CTFtime = () => {
   );
 };
 
-export default CTFtime;
+export default Links;
