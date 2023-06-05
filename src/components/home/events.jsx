@@ -13,10 +13,10 @@ class Events extends Component {
 
   async componentDidMount() {
     Axios.get("https://api.scriptkitties.ca/events")
-      .then(result => {
+      .then((result) => {
         this.setState({ events: result.data });
       })
-      .catch(err => {
+      .catch((err) => {
         this.setState({ isError: true });
       });
   }
@@ -32,20 +32,19 @@ class Events extends Component {
         data-sal-delay="300"
         data-sal-easing="ease"
       >
-        {events.slice(0, 3).map(item => {
+        {events.slice(0, 3).map((item) => {
           return (
             <Event
-              name={ item.name }
-              startTime={ item.start_time }
-              endTime={ item.end_time }
-              started={ item.started }
+              name={item.name}
+              startTime={item.start_time}
+              endTime={item.end_time}
+              started={item.started}
             />
-          )
+          );
         })}
       </div>
-    )
+    );
   }
 }
-
 
 export default Events;

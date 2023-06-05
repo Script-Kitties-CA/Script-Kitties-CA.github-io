@@ -9,12 +9,15 @@ import About from "../components/home/about";
 const IndexPage = () => {
   return (
     <Layout>
-      <SiteMetadata title="Script Kitties - Home" />
       <ThemeSwitcher />
       <Landing />
       <About />
     </Layout>
   );
 };
+
+export function Head() {
+  return <SiteMetadata title="Script Kitties - Home" />;
+}
 
 export default IndexPage;

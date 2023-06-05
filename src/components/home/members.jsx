@@ -6,42 +6,64 @@ import Member from "./member";
 const Members = () => {
   const data = useStaticQuery(graphql`
     {
-      emily: file(relativePath: { eq: "members/emily.png" }) {
+      alexandraTenney: file(
+        relativePath: { eq: "members/alexandra-tenney.png" }
+      ) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
-      emilyDark: file(relativePath: { eq: "members/emily-dark.png" }) {
+      alexandraTenneyDark: file(
+        relativePath: { eq: "members/alexandra-tenney-dark.png" }
+      ) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
-      alex: file(relativePath: { eq: "members/alex.png" }) {
+      anthonyLoria: file(relativePath: { eq: "members/anthony-loria.png" }) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
-      alexDark: file(relativePath: { eq: "members/alex-dark.png" }) {
+      anthonyLoriaDark: file(
+        relativePath: { eq: "members/anthony-loria-dark.png" }
+      ) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
-      james: file(relativePath: { eq: "members/james.png" }) {
+      emilyBaird: file(relativePath: { eq: "members/emily-baird.png" }) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
-      jamesDark: file(relativePath: { eq: "members/james-dark.png" }) {
+      emilyBairdDark: file(
+        relativePath: { eq: "members/emily-baird-dark.png" }
+      ) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
-      jeremy: file(relativePath: { eq: "members/jeremy.png" }) {
+      jamesLowther: file(relativePath: { eq: "members/james-lowther.png" }) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
-      jeremyDark: file(relativePath: { eq: "members/jeremy-dark.png" }) {
+      jamesLowtherDark: file(
+        relativePath: { eq: "members/james-lowther-dark.png" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(width: 500, layout: CONSTRAINED)
+        }
+      }
+      jeremyStuart: file(relativePath: { eq: "members/jeremy-stuart.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 500, layout: CONSTRAINED)
+        }
+      }
+      jeremyStuartDark: file(
+        relativePath: { eq: "members/jeremy-stuart-dark.png" }
+      ) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
@@ -52,10 +74,39 @@ const Members = () => {
   return (
     <>
       <div className="flex flex-wrap justify-evenly w-full mb-8">
-        <Member name="James Lowther" alias="Articuler" url="https://jameslowther.com/" image={data.james} imageDark={data.jamesDark} />
-        <Member name="Emily Baird" alias="Analytical Engine" url="https://ebaird.ca/" image={data.emily} imageDark={data.emilyDark} />
-        <Member name="Alexandra Tenney" alias="alexxxii" image={data.alex} imageDark={data.alexDark} />
-        <Member name="Jeremy Stuart" alias="Mr.Wizard" image={data.jeremy} imageDark={data.jeremyDark} />
+        <Member
+          name="Alexandra Tenney"
+          alias="alexxxii"
+          image={data.alexandraTenney}
+          imageDark={data.alexandraTenneyDark}
+        />
+        <Member
+          name="Anthony Loria"
+          alias="bros2535"
+          url="https://anthonyloria.dev/"
+          image={data.anthonyLoria}
+          imageDark={data.anthonyLoriaDark}
+        />
+        <Member
+          name="Emily Baird"
+          alias="Analytical Engine"
+          url="https://ebaird.ca/"
+          image={data.emilyBaird}
+          imageDark={data.emilyBairdDark}
+        />
+        <Member
+          name="James Lowther"
+          alias="Articuler"
+          url="https://jameslowther.com/"
+          image={data.jamesLowther}
+          imageDark={data.jamesLowtherDark}
+        />
+        <Member
+          name="Jeremy Stuart"
+          alias="Mr.Wizard"
+          image={data.jeremyStuart}
+          imageDark={data.jeremyStuartDark}
+        />
       </div>
     </>
   );
