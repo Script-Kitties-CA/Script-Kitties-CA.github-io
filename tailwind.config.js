@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         "violet-250": "#d3cbf7",
         "gray-custom": "#2b2b2b",
-      }
+      },
     },
   },
   variants: {},

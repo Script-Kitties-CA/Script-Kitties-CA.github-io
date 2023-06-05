@@ -29,13 +29,23 @@ const Member = (props) => {
       </div>
       <p className="text-2xl">{props.name}</p>
       <p className="text-xl">{props.alias}</p>
-      {props.url &&
+      {props.url && (
         <a href={props.url} target="_blank" rel="noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 stroke-stone-900 dark:stroke-stone-100 hover:scale-103" fill="none" viewBox="0 0 24 24" strokeWidth={1.9}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 stroke-stone-900 dark:stroke-stone-100 hover:scale-103"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.9}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+            />
           </svg>
         </a>
-      }
+      )}
     </div>
   );
 };
