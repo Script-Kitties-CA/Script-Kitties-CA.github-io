@@ -17,7 +17,7 @@ const IndexPage = () => {
 };
 
 export function Head() {
-  return <SiteMetadata title="Script Kitties - Home" />;
+  return <SiteMetadata title="Script Kitties" />;
 }
 
 export default IndexPage;
