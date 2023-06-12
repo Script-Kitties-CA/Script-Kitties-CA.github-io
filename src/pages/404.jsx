@@ -1,11 +1,13 @@
 import * as React from "react";
 
 import SiteMetadata from "../components/seo";
+import ThemeSwitcher from "../components/themeswitcher";
 import Layout from "../components/layout";
 
 const NotFoundPage = () => {
   return (
     <Layout>
+      <ThemeSwitcher />
       <div className="flex flex-col justify-center items-center w-full h-screen">
         <p className="font-bold text-4xl text-stone-900 dark:text-stone-100">
           404: Page not found
