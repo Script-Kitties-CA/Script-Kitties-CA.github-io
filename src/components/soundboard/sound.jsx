@@ -3,8 +3,17 @@ import * as React from "react";
 const Sound = (props) => {
   if (typeof Audio != "undefined") {
     let audio = new Audio(props.audio);
+    audio.preload = "auto"
+
+    let audio_objects = props.audio_objects;
+    audio_objects.push(audio);
 
     const start = () => {
+      audio_objects.map((x) => {
+        x.pause();
+        x.currentTime = 0;
+      })
+
       audio.play();
     };
 
