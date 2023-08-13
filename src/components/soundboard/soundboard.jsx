@@ -9,13 +9,15 @@ import flagPartyRock from "../audio/flag-party-rock.mp3";
 import flagShots from "../audio/flag-shots.mp3";
 
 const Soundboard = () => {
+  const audio_objects = [];
+
   return (
     <div className="min-h-screen flex flex-wrap justify-around items-center">
-      <Sound audio={flagBasic} title="Basic" />
-      <Sound audio={flagBonnieTyler} title="Bonnie Tyler" />
-      <Sound audio={flagOwlCity} title="Owl City" />
-      <Sound audio={flagPartyRock} title="Party Rock" />
-      <Sound audio={flagShots} title="Shots" />
+      <Sound audio={flagBasic} audio_objects={audio_objects} title="Basic" />
+      <Sound audio={flagBonnieTyler} audio_objects={audio_objects} title="Bonnie Tyler" />
+      <Sound audio={flagOwlCity} audio_objects={audio_objects} title="Owl City" />
+      <Sound audio={flagPartyRock} audio_objects={audio_objects} title="Party Rock" />
+      <Sound audio={flagShots} audio_objects={audio_objects} title="Shots" />
     </div>
   );
 };
