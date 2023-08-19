@@ -6,7 +6,6 @@ import flagBasic from "../audio/flag-basic.mp3";
 import flagBonnieTyler from "../audio/flag-bonnie-tyler.mp3";
 import flagOwlCity from "../audio/flag-owl-city.mp3";
 import flagPartyRock from "../audio/flag-party-rock.mp3";
-import flagRednex from "../audio/flag-rednex.mp3";
 import flagShots from "../audio/flag-shots.mp3";
 
 const Soundboard = () => {
@@ -18,7 +17,7 @@ const Soundboard = () => {
       <Sound audio={flagBonnieTyler} audio_objects={audio_objects} title="Bonnie Tyler" />
       <Sound audio={flagOwlCity} audio_objects={audio_objects} title="Owl City" />
       <Sound audio={flagPartyRock} audio_objects={audio_objects} title="Party Rock" />
-	  <Sound audio={flagRednex} audio_objects={audio_objects} title="Rednex" />
+	  <Sound audio={flagPartyRock} audio_objects={audio_objects} title="Rednex" />
       <Sound audio={flagShots} audio_objects={audio_objects} title="Shots" />
     </div>
   );
