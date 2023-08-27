@@ -32,6 +32,18 @@ const Members = () => {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
+      elliSengsavang: file(relativePath: { eq: "members/elli-sengsavang.png" }) {
+        childImageSharp {
+          gatsbyImageData(width: 500, layout: CONSTRAINED)
+        }
+      }
+      elliSengsavangDark: file(
+        relativePath: { eq: "members/elli-sengsavang-dark.png" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(width: 500, layout: CONSTRAINED)
+        }
+      }
       emilyBaird: file(relativePath: { eq: "members/emily-baird.png" }) {
         childImageSharp {
           gatsbyImageData(width: 500, layout: CONSTRAINED)
@@ -86,6 +98,13 @@ const Members = () => {
           url="https://anthonyloria.dev/"
           image={data.anthonyLoria}
           imageDark={data.anthonyLoriaDark}
+        />
+        <Member
+          name="Elli Sengsavang"
+          alias="petiole"
+          url="https://e-seng.github.io/"
+          image={data.elliSengsavang}
+          imageDark={data.elliSengsavangDark}
         />
         <Member
           name="Emily Baird"
