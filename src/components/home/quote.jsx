@@ -10,7 +10,7 @@ const Quote = () => {
         data-sal-delay="900"
         data-sal-easing="ease"
       >
-        "Being bad at CTFs is a good reason to do CTFs"
+        "Clawing our way to the top"
       </p>
     </>
   );
