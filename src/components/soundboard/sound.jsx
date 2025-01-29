@@ -12,6 +12,7 @@ const Sound = (props) => {
       audio_objects.map((x) => {
         x.pause();
         x.currentTime = 0;
+        return null;
       })
 
       audio.play();

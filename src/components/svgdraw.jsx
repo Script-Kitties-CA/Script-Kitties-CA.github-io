@@ -64,7 +64,7 @@ DrawSVG.propTypes = {
   targets: PropTypes.string,
   easing: PropTypes.string,
   duration: PropTypes.number,
-  delay: PropTypes.number,
+  delay: PropTypes.func,
   loop: PropTypes.bool,
   children: PropTypes.element.isRequired,
 };
