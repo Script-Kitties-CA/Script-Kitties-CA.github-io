@@ -19,7 +19,7 @@ const Yarn = () => {
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="40.666 160.943 910.641 296.861"
-          stroke-linecap="round"
+          strokeLinecap="round"
         >
           <path
             id="yarn"
